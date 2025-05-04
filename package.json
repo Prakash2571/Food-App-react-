@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "homepage": "https://prakash2571.github.io/Food-App-react",
   "scripts": {
-    "start": "parcel new.html",
+    "start": "parcel index.html",
     "test": "jest",
-    "build": "parcel build new.html",
+    "build": "parcel build index.html && cp dist/index.html dist/404.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
