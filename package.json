@@ -1,9 +1,13 @@
 {
   "name": "food-app-react",
   "version": "1.0.0",
-  "start": "parcel index.html",
+  "homepage": "https://prakash2571.github.io/Food-App-react",
   "scripts": {
-    "test": "jest"
+    "start": "parcel new.html",
+    "test": "jest",
+    "build": "parcel build new.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Prakash",
   "license": "ISC",
@@ -15,6 +19,7 @@
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.3.0",
     "babel-jest": "^29.7.0",
+    "gh-pages": "^6.3.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "parcel": "^2.14.4",
@@ -30,5 +35,10 @@
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
     "react-router": "^7.5.1"
-  }
+  },
+  "browserslist": [
+    "last 3 Chrome versions",
+    "last 3 Firefox versions",
+    "last 3 Safari versions"
+  ]
 }
